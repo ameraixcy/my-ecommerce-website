@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sales Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #005fa3;
+  }
+
+  form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* transparent white box */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  form h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input, textarea {
+    padding: 8px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #0077cc;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #005fa3;
+  }
+</style>
+</head>
+<body>
+  <h1>🐻 Kawaii Crochet Corner</h1>
+  <h3><i>Where yarn turns into cute little treasures!</i></h3>
+
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Price Range</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td><a href="plushies.html">Plushies</a></td>
+      <td>₱150 - ₱400</td>
+      <td>Soft and cuddly handmade plushies that bring comfort and joy.</td>
+    </tr>
+    <tr>
+      <td><a href="keychains.html">Keychains</a></td>
+      <td>₱250 - ₱300</td>
+      <td>Tiny crochet keychains that add cuteness to your keys or bags.</td>
+    </tr>
+    <tr>
+      <td><a href="flowers.html">Flowers</a></td>
+      <td>₱500 - ₱600</td>
+      <td>Beautiful handmade flowers that stay in bloom forever.</td>
+    </tr>
+    <tr>
+      <td><a href="food-plushies.html">Food Plushies</a></td>
+      <td>₱400 - ₱700</td>
+      <td>Sweet crochet treats that look cute and fun to display.</td>
+    </tr>
+    <tr>
+      <td><a href="bracelets.html">Bracelets</a></td>
+      <td>₱250 - ₱350</td>
+      <td>Stylish and comfy crochet bracelets made with love.</td>
+    </tr>
+    <tr>
+      <td><a href="scrunchies.html">Hair Clips & Scrunchies</a></td>
+      <td>₱80 - ₱100</td>
+      <td>Soft and colorful accessories to brighten your hairstyle.</td>
+    </tr>
+    <tr>
+      <td><a href="phone-charms.html">Phone Charms</a></td>
+      <td>₱100 - ₱150</td>
+      <td>Fun and unique crochet charms for your phone or bag.</td>
+    </tr>
+    <tr>
+      <td><a href="coin-purse.html">Coin Purse</a></td>
+      <td>₱70 - ₱150</td>
+      <td>Cute and handy coin purses made from colorful yarn.</td>
+    </tr>
+    <tr>
+      <td><a href="pet-accessories.html">Pet Accessories</a></td>
+      <td>₱80 - ₱120</td>
+      <td>Soft and stylish handmade collars or bandanas for your pets.</td>
+    </tr>
+  </table>
+  <section id="contact" style="margin-top: 40px; text-align: center;">
+    <h2>📩 Contact Seller</h2>
+    <p>Have a question or want to order a custom crochet item? Send me a message below!</p>
+
+    <form style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 60%;
+      margin: 20px auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    ">
+      <label for="name" style="font-weight: bold;">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="email" style="font-weight: bold;">Your Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="message" style="font-weight: bold;">Message:</label>
+      <textarea id="message" rows="4" placeholder="Type your message here..." required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <button type="submit" style="
+        background-color: #0077cc;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      ">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>
