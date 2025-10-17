@@ -6,7 +6,7 @@
   body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('images/new-background.png');
+    background-image: url('images/background1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -48,7 +48,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* transparent white box */
+    background-color: rgba(255, 255, 255, 0.9);
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -85,6 +85,71 @@
   button:hover {
     background-color: #005fa3;
   }
+  #contact {
+    background-color: rgba(255, 240, 245, 0.9); /* soft pink */
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255,182,193,0.4);
+  }
+
+  #contact h2 {
+    color: #ff69b4;
+    font-size: 26px;
+  }
+
+  #contact p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #contact label {
+    color: #333;
+  }
+
+  #contact input,
+  #contact textarea {
+    background-color: #fff;
+    border: 1px solid #ffc0cb;
+    border-radius: 8px;
+    width: 80%;
+    padding: 10px;
+    font-family: inherit;
+  }
+
+  #contact button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  #contact button:hover {
+    background-color: #ff91a4;
+  }
+  .back-btn {
+    display: inline-block;
+    background-color: #ffb6c1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 40px auto;
+  }
+
+  .back-btn:hover {
+    background-color: #ff91a4;
+  }
+
 </style>
 </head>
 <body>
@@ -143,44 +208,27 @@
       <td>Soft and stylish handmade collars or bandanas for your pets.</td>
     </tr>
   </table>
-  <section id="contact" style="margin-top: 40px; text-align: center;">
-    <h2>📩 Contact Seller</h2>
-    <p>Have a question or want to order a custom crochet item? Send me a message below!</p>
 
-    <form style="
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      width: 60%;
-      margin: 20px auto;
-      background-color: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    ">
-      <label for="name" style="font-weight: bold;">Your Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;">
+  <section id="contact">
+    <h2>📩 Contact the Seller</h2>
+    <p>Got questions or want to order a custom crochet piece? I’d love to hear from you!</p>
 
-      <label for="email" style="font-weight: bold;">Your Email:</label>
-      <input type="email" id="email" placeholder="Enter your email" required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;">
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
 
-      <label for="message" style="font-weight: bold;">Message:</label>
-      <textarea id="message" rows="4" placeholder="Type your message here..." required style="padding: 8px; width: 80%; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
 
-      <button type="submit" style="
-        background-color: #0077cc;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-      ">Send Message</button>
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">💌 Send Message</button>
     </form>
   </section>
+
+  <div>
+    <a href="index.html" class="back-btn">⬅ Back to Main Page</a>
+  </div>
 </body>
 </html>
-
-
-
